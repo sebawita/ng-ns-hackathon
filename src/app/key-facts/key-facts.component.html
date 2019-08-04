@@ -1,0 +1,9 @@
+<section>
+  <h1 class="section-title">Key Facts</h1>
+  <div class="key-facts">
+    <div class="key-fact" *ngFor="let fact of keyFacts">
+      <h3 class="key-fact-title">{{fact.title}}</h3>
+      <p class="key-fact-description">{{fact.description}}</p>
+    </div>
+  </div>
+</section>
