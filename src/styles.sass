@@ -1,8 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'fonts.sass'
 
 body
   font-family: 'roboto'
+  box-sizing: border-box
+
+.audience
   display: grid
+
+.container  
+    display: grid
+    grid-column-gap: 24px
+    grid-row-gap: 36px
+    grid-template-columns: repeat(4,1fr)
+     grid-template-rows: 1fr 1fr
+    margin: 0 200px
+
+app-intro
+    grid-column: span 2
 
 
 

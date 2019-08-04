@@ -9,6 +9,8 @@ import { WhyComponent } from './why/why.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
+import { OrDevsComponent } from './or-devs/or-devs.component';
+import { ForNgosComponent } from './for-ngos/for-ngos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.compon
     WhyComponent,
     RegisterComponent,
     HomeComponent,
-    CodeOfConductComponent
+    CodeOfConductComponent,
+    OrDevsComponent,
+    ForNgosComponent
   ],
   imports: [
     BrowserModule,
