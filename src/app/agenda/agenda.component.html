@@ -1,14 +1,18 @@
-<section>
-  <h2 class="section-title">Agenda</h2>
+<section class="mat-typography">
+  <h2 class="mat-display-3">Agenda</h2>
   <div class="agenda">
     <div class="day" *ngFor="let day of agenda">
-      <h3 class="day-date">{{day.date | date:'EEEE, dd-MMM y'}}</h3>
+      <h2 class="day-date main-item">{{day.date | date:'EEEE, dd-MMM y'}}</h2>
 
-      <div class="agenda-item" *ngFor="let item of day.items">
-        <h3 class="agenda-item-time">{{item.time | date:'shortTime'}}</h3>
+      <div class="agenda-item" *ngFor="let item of day.items" [matTooltip]="item.description"
+        matTooltipPosition="above">
+
+        <mat-icon mat-list-icon>schedule</mat-icon>
+        <h3 class="agenda-item-time primary">{{item.time | date:'shortTime'}}</h3>
         <h3 class="agenda-item-title">{{item.title}}</h3>
         <!-- <p class="agenda-item-description">{{item.description}}</p> -->
       </div>
+      <mat-divider></mat-divider>
     </div>
   </div>
 </section>
