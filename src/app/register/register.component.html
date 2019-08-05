@@ -1,1 +1,31 @@
-<p>register works!</p>
+<section class="mat-typography page-content">
+  <h1 class="page-title">Register</h1>
+  <div class="register">
+    <p>
+      Just fill up a quick form to let us know that you are interested, and we will follow up
+      with more info soon.
+    </p>
+
+    <p>
+      You can register as:<br />
+      ☆ a Participant - You will work alone or in a team. Only one registration per team required.<br />
+      ☆ a Non-profit - You will share an idea, which any team(s) could use to build as part of this hackathon.
+    </p>
+  </div>
+
+  <div class="cards">
+    <mat-card *ngFor="let option of registerOptions" class="register-card">
+      <mat-card-header>
+        <mat-card-title>{{option.title}}</mat-card-title>
+        <mat-card-subtitle>{{option.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{option.description}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a target="_blank" [href]="option.link"><button mat-raised-button color="accent">REGISTER</button></a>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+</section>

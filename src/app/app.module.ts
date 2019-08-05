@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -48,6 +49,7 @@ import { ForDevsComponent } from './for-devs/for-devs.component';
     MatListModule,
     MatIconModule,
     MatTooltipModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
