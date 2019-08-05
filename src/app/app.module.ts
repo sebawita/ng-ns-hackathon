@@ -9,9 +9,9 @@ import { WhyComponent } from './why/why.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
-import { OrDevsComponent } from './or-devs/or-devs.component';
 import { ForNgosComponent } from './for-ngos/for-ngos.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { ForDevsComponent } from './for-devs/for-devs.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +22,9 @@ import { AgendaComponent } from './agenda/agenda.component';
     RegisterComponent,
     HomeComponent,
     CodeOfConductComponent,
-    OrDevsComponent,
+    ForDevsComponent,
     ForNgosComponent,
-    AgendaComponent
+    AgendaComponent,
   ],
   imports: [
     BrowserModule,
