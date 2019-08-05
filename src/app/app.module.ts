@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 import { OrDevsComponent } from './or-devs/or-devs.component';
 import { ForNgosComponent } from './for-ngos/for-ngos.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ForNgosComponent } from './for-ngos/for-ngos.component';
     HomeComponent,
     CodeOfConductComponent,
     OrDevsComponent,
-    ForNgosComponent
+    ForNgosComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,

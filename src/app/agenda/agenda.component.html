@@ -1,0 +1,14 @@
+<section>
+  <h2 class="section-title">Agenda</h2>
+  <div class="agenda">
+    <div class="day" *ngFor="let day of agenda">
+      <h3 class="day-date">{{day.date | date:'EEEE, dd-MMM y'}}</h3>
+
+      <div class="agenda-item" *ngFor="let item of day.items">
+        <h4 class="agenda-item-time">{{item.time | date:'shortTime'}}</h4>
+        <h5 class="agenda-item-title">{{item.title}}</h5>
+        <!-- <p class="agenda-item-description">{{item.description}}</p> -->
+      </div>
+    </div>
+  </div>
+</section>

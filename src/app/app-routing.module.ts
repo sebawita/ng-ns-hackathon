@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { AgendaComponent } from './agenda/agenda.component';
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'agenda', component: AgendaComponent },
   { path: 'code-of-conduct', component: CodeOfConductComponent },
   { path: 'register', component: RegisterComponent },
 ];
