@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-key-facts',
   templateUrl: './key-facts.component.html',
-  styleUrls: ['./key-facts.component.sass']
+  styleUrls: ['./key-facts.component.scss']
 })
 export class KeyFactsComponent implements OnInit {
 

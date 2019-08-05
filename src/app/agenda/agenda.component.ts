@@ -14,7 +14,7 @@ interface AgendaItem {
 @Component({
   selector: 'app-agenda',
   templateUrl: './agenda.component.html',
-  styleUrls: ['./agenda.component.sass']
+  styleUrls: ['./agenda.component.scss']
 })
 export class AgendaComponent implements OnInit {
 
