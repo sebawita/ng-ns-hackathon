@@ -2,7 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+
+// Material Design Components
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+
 import { AppComponent } from './app.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+
 import { IntroComponent } from './intro/intro.component';
 import { KeyFactsComponent } from './key-facts/key-facts.component';
 import { WhyComponent } from './why/why.component';
@@ -25,10 +33,14 @@ import { ForDevsComponent } from './for-devs/for-devs.component';
     ForDevsComponent,
     ForNgosComponent,
     AgendaComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
