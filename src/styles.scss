@@ -4,7 +4,7 @@
 
 body { 
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .page-title {
@@ -15,21 +15,72 @@ body {
   padding: 4px;
 }
 
+.nav-bar {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.nav-items {
+  justify-self: end;
+}
+.home-button {
+  justify-self: start;
+}
+
 .audience {
   display: grid;
   padding: 20px;
 }
 .container {
     display: grid;
-    grid-column-gap: 24px;
-    grid-row-gap: 36px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 1fr 1fr;
-    margin: 40px 200px 0 200px;
+    grid-column-gap: 1.2em;
+    grid-row-gap: 2em;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100vh;
+    margin: 0px 20vw;
 }
 
-app-intro {
-  grid-column: span 2;
+//mobile
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .container {
+    display: grid;
+    background: red;
+    grid-template-columns: 90vw;
+    margin: 0px 5vw;
+  }
+  app-intro {
+    order:1;
+  }
+  .audience {
+    order:2;
+  }
+  app-key-facts {
+    order:3;
+  }
+}
+
+//tablet
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .container {
+    display: grid;
+    background: lightblue;
+    grid-template-columns: 90vw;
+    margin: 0px 5vw;
+  }
+  app-intro {
+    order:1;
+  }
+  .audience {
+    order:2;
+  }
+  app-key-facts {
+    order:3;
+  }
+}
+
+.intro {
+  // grid-column: span 2;
   padding: 1em;
 }
 
