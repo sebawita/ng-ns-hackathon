@@ -24,6 +24,7 @@ import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.compon
 import { ForNgosComponent } from './for-ngos/for-ngos.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { ForDevsComponent } from './for-devs/for-devs.component';
+import { LearningComponent } from './learning/learning.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ForDevsComponent } from './for-devs/for-devs.component';
     ForNgosComponent,
     AgendaComponent,
     NavBarComponent,
+    LearningComponent,
   ],
   imports: [
     BrowserModule,
