@@ -16,8 +16,8 @@ body {
 }
 
 .nav-bar {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
@@ -38,11 +38,11 @@ body {
     grid-row-gap: 2em;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 100vh;
-    margin: 0px 20vw;
+    margin: 0px 10vw;
 }
 
 //mobile
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media (max-width : 480px) {
   .container {
     display: grid;
     background: red;
@@ -50,21 +50,21 @@ body {
     margin: 0px 5vw;
   }
   app-intro {
-    order:1;
+    order: 1;
   }
   .audience {
-    order:2;
+    order: 2;
   }
   app-key-facts {
-    order:3;
+    order: 3;
   }
 }
 
 //tablet
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media (min-width: 480px) and (max-width : 768px) {
   .container {
     display: grid;
-    background: lightblue;
+    background: lightgreen;
     grid-template-columns: 90vw;
     margin: 0px 5vw;
   }
@@ -78,6 +78,15 @@ body {
     order:3;
   }
 }
+
+// @media (min-width: 768px) {
+//   .container {
+//     display: grid;
+//     background:pink;
+//     grid-template-columns: 90vw;
+//     margin: 0px 5vw;
+//   }
+// }
 
 .intro {
   // grid-column: span 2;
@@ -87,6 +96,7 @@ body {
 app-key-facts, app-why {
   padding: 1em;
 }
+
   
 @import '~@angular/material/theming';
 
