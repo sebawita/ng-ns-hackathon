@@ -1,23 +1,43 @@
+.page-content {
+
+  margin: 2.5em 1.5em 0px;
+
+  .page-title {
+      margin-bottom: 1em;
+  }
+  h2 {
+      margin-top: 1.5em;
+  }
+}
 .agenda {
+   
+  li {
+    list-style-type: none;
+  }
+  .agenda-item {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-column-gap: 12px;
+    padding: 0px 1.5em 0px;
+  }
 }
+// .day {
+// }
 
-.day {
-}
+// .day-date {
+//   padding-left: 2em;
+// }
 
-.day-date {
-  padding-left: 2em;
-}
+// .agenda-item {
+//   display: grid;
+//   grid-column-gap: 12px;
+//   grid-template-columns: auto 1fr 5fr;
+// }
 
-.agenda-item {
-  display: grid;
-  grid-column-gap: 12px;
-  grid-template-columns: auto 1fr 5fr;
-}
+// .agenda-item-time{
+//   color: brown;
+// }
 
-.agenda-item-time{
-  color: brown;
-}
-
-.agenda-item-title {
-  color: purple;
-}
+// .agenda-item-title {
+//   color: purple;
+// }
