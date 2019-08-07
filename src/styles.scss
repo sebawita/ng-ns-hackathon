@@ -3,8 +3,12 @@
 @import 'fonts.scss';
 
 body { 
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Avenir", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
+  background-color: #3D5AFE;
+
+  // background-image: linear-gradient(#f30009, #2200a0);
+  color:white;
 }
 
 .page-title {
@@ -28,24 +32,21 @@ body {
   justify-self: start;
 }
 
-.audience {
-  display: grid;
-  padding: 20px;
-}
+
 .container {
     display: grid;
     grid-column-gap: 1.2em;
     grid-row-gap: 2em;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100vh;
-    margin: 0px 10vw;
+    grid-template-rows: 75vh;
+    margin: 10vh 10vw;
+    
 }
 
 //mobile
 @media (max-width : 480px) {
   .container {
     display: grid;
-    background: red;
     grid-template-columns: 90vw;
     margin: 0px 5vw;
   }
@@ -64,8 +65,6 @@ body {
 @media (min-width: 480px) and (max-width : 768px) {
   .container {
     display: grid;
-    background: lightgreen;
-    grid-template-columns: 90vw;
     margin: 0px 5vw;
   }
   app-intro {
@@ -79,17 +78,18 @@ body {
   }
 }
 
-// @media (min-width: 768px) {
-//   .container {
-//     display: grid;
-//     background:pink;
-//     grid-template-columns: 90vw;
-//     margin: 0px 5vw;
-//   }
-// }
+.audience {
+  display: grid;
+  padding: 1em;
+}
 
+app-intro {
+  background: url("assets/img/Hack_for_good_transp_blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .intro {
-  // grid-column: span 2;
   padding: 1em;
 }
 
