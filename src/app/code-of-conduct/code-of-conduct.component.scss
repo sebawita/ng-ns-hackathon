@@ -1,0 +1,22 @@
+
+//why can't I import my scss partials here?
+
+.code-of-conduct {
+    margin: 2.5em 1.5em 0px;
+    .page-title {
+        margin-bottom: 1em;
+    }
+    h2 {
+        margin-top:1.5em;
+    }
+}
+.code-intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.2em;
+}
+.contact {
+    // background: rgba(115, 251, 211, 1); 
+    // padding: 1em;
+    border-radius: 5px;
+}
