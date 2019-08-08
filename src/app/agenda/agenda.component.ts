@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface Day {
   date: Date;
@@ -16,7 +16,7 @@ interface AgendaItem {
   templateUrl: './agenda.component.html',
   styleUrls: ['./agenda.component.scss']
 })
-export class AgendaComponent implements OnInit {
+export class AgendaComponent {
 
   agenda: Day[] = [
     {
@@ -85,10 +85,4 @@ export class AgendaComponent implements OnInit {
       ]
     },
   ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

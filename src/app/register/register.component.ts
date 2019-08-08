@@ -1,30 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent implements OnInit {
-
+export class RegisterComponent {
   registerOptions = [
     {
       title: 'Participants',
       subtitle: 'Register a solo/team',
-      description: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla register a team',
+      description: 'Are you excited about the hackacthon and want to make the world a better place? Sign up here.',
       link: 'https://forms.gle/B6JfpPMqnf3DsNUV9'
     },
     {
       title: 'NGOs',
       subtitle: 'Register an idea',
-      description: 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla register an idea',
+      description: 'If you work for an NGO, then this is a great opportunity to share your idea with us.',
       link: 'https://forms.gle/1sqK7wu6BefY4mc77'
     },
   ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

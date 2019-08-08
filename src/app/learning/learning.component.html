@@ -1,7 +1,44 @@
-<section class="page-content">
+<section class="">
   <h1 class="page-title">Learning</h1>
   <p>
     Here are some resources / learning opportunities that you could use to learn more about using <b>Angular</b> and
     <b>NativeScript</b> to build mobile apps.
   </p>
+
+  <h2>Live Sessions</h2>
+
+  <ul class="items">
+    <li *ngFor="let session of sessions">
+      <div class="item">
+        <h3><a target="_blank" [href]="session.link">{{session.name}}</a></h3>
+        <h4>{{session.date | date:'MMMM d, y, HH:mm z'}}</h4>
+        <p class="multi-line">{{session.description}}</p>
+      </div>
+      <mat-divider></mat-divider>
+    </li>
+  </ul>
+
+  <h2>Resources</h2>
+
+  <ul class="items">
+    <li *ngFor="let resource of resources">
+      <div class="item">
+        <h3><a target="_blank" [href]="resource.link">{{resource.name}}</a></h3>
+        <p class="multi-line">{{resource.description}}</p>
+      </div>
+      <mat-divider></mat-divider>
+    </li>
+  </ul>
+
+  <h2>Courses / Tutorials</h2>
+
+  <ul class="items">
+    <li *ngFor="let course of courses">
+      <div class="item">
+        <h3><a target="_blank" [href]="course.link">{{course.name}}</a></h3>
+        <p class="multi-line">{{course.description}}</p>
+      </div>
+      <mat-divider></mat-divider>
+    </li>
+  </ul>
 </section>

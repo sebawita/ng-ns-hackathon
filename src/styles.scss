@@ -35,7 +35,7 @@ body {
     display: grid;
     grid-column-gap: $grid-column-gap;
     grid-row-gap: $grid-row-gap;
-    grid-template-rows: repeat(4, 1fr);
+    // grid-template-rows: repeat(4, 1fr);
   }
   app-intro {
     order: 1;
@@ -91,7 +91,10 @@ body {
 }
 
   
-
+a {
+  color: white;
+  font-weight: bold;
+}
 
 //these are not needed for now
 // .page-title {
