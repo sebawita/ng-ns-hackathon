@@ -29,72 +29,133 @@ body {
   justify-self: start;
 }
 
-//Mobile first layout
-@media (max-width : 980px) {
-  .intro-container {
+//Mobile first layout HOMEPAGE
+@media (max-width: 1020px) {
+  .page-content {
     display: grid;
+    grid-template-rows: repeat(2fr,1fr,1fr);
     grid-column-gap: $grid-column-gap;
     grid-row-gap: $grid-row-gap;
-    // grid-template-rows: repeat(4, 1fr);
   }
-  app-intro {
-    order: 1;
-    background: url("assets/img/Hack_for_good_transp_blue.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .intro-container {
+  
+    .intro {
+      min-height: 60vh;
+      background: url("assets/img/Hack_for_good_transp_blue.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
-  .audience {
-    order: 2;
+
+  .subsection h2{
+    border-top: 3px solid;
+    margin: 20px 0px;
+    padding-top:10px;
+  }
+
+  .mission {
   }
   app-key-facts {
-    order: 3;
+    // text-align: center;
   }
+  
 }
 
-//desktop
-@media(min-width: 980px) {
+//desktop HOMEPAGE
+@media(min-width: 1020px) {
 
   .page-content {
     margin-top: $margin-top-content;
     display: grid;
-    grid-template-rows: 80vh 10vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,auto-fit);
+
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: $grid-row-gap;
+   
   }
   //home component
   .intro-container {
+    grid-column: span 4;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: $grid-row-gap;
+
     background: url("assets/img/Hack_for_good_transp_blue.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     }
     
-  .audience {
-    display: grid;
-    grid-template-rows: repeat (3,1fr);
-  
+
+  app-intro {
+    order: 2;
+    .intro {
+      border-left: 3px solid;
+      padding: $padding-content;
+    } 
   }
 
-  .intro, app-key-facts {
+  app-key-facts {
+    order: 1;
+  }
+
+  .mission {
+    order: 3;
     padding: $padding-content;
   }
-  .description-container {
-    display: grid;
-    grid-column-gap: $grid-column-gap;
-    grid-row-gap: $grid-row-gap;
-    .description-title {
-      grid-column: 2/4; 
+  .getting-ready {
+    grid-column: span 3;
+    border-top: 1 px solid;
+    border-left: 3px solid;
+    padding: $padding-content;  
+  }
+  .connect {
+    padding: $padding-content;
+ }
+}
+
+///Agenda
+.agenda {
+
+  margin: $margin-top-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto-fit;
+
+  @media (min-width: 1020px) {
+
+    .page-title {
+        margin-bottom: 1em;
     }
-    
+    h2 {
+        margin-top: 1.5em;
+    }
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .schedule li{
+    list-style-type: none;
+    border-left: 3px solid;
+    padding: $padding-content; 
+    // padding-left:0;
+
+  }
+
+  .agenda-item {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-column-gap: 12px;
+    padding: 0px;   
   }
 }
 
-  
-a {
-  color: white;
-  font-weight: bold;
-}
 
 //these are not needed for now
 // .page-title {
