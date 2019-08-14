@@ -1,0 +1,30 @@
+<section class="prizes">
+  <h1 class="page-title">Prizes</h1>
+  <div class="">
+
+    <h2>How Scoring Works</h2>
+    <p>Entries will be judged on a 20-100 scale across 3
+      dimensions:</p>
+    <ul>
+      <li><b>Innovation</b> - How original is the idea and execution?</li>
+      <li><b>Design</b> - How good does it look and feel to use?</li>
+      <li><b>Utility / Fun</b> - Is the app offering a service I'd use again and again?</li>
+    </ul>
+
+    <h2>Categories</h2>
+
+    <div *ngFor="let category of categories" class="category">
+      <h3>{{category.name}}</h3>
+      <p>{{category.description}}</p>
+
+      <ul class="items">
+        <li *ngFor="let prize of category.prizes">
+          <!-- <p><b>{{prize.name}}:</b> {{prize.prize}}</p> -->
+          <p><b>{{prize.name}}:</b> TBC</p>
+        </li>
+      </ul>
+      <mat-divider></mat-divider>
+    </div>
+
+  </div>
+</section>

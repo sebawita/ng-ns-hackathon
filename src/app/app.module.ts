@@ -25,6 +25,8 @@ import { ForNgosComponent } from './for-ngos/for-ngos.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { ForDevsComponent } from './for-devs/for-devs.component';
 import { LearningComponent } from './learning/learning.component';
+import { RulesComponent } from './rules/rules.component';
+import { PrizesComponent } from './prizes/prizes.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { LearningComponent } from './learning/learning.component';
     AgendaComponent,
     NavBarComponent,
     LearningComponent,
+    RulesComponent,
+    PrizesComponent,
   ],
   imports: [
     BrowserModule,
