@@ -36,9 +36,21 @@ b {
   justify-self: start;
 }
 
+//page margins for mobile and desktop
+@media (min-width: 1020px){
+  .page-content {
+    margin-top: $margin-top-content;
+    margin-left: 0px;
+    .page-title {
+      //fond out where else this is applied
+      margin-bottom: $content-top-padding-desktop;
+    }
+  }
+}
+
 //Mobile first layout HOMEPAGE
 @media (max-width: 1020px) {
-  .page-content {
+  .home {
     display: grid;
     grid-template-rows: repeat(2fr,1fr,1fr);
     grid-column-gap: $grid-column-gap;
@@ -58,13 +70,7 @@ b {
   .subsection h2{
     border-top: 3px solid;
     margin: 20px 0px;
-    padding-top:10px;
-  }
-
-  .mission {
-  }
-  app-key-facts {
-    // text-align: center;
+    padding-top: 10px;
   }
   
 }
@@ -72,8 +78,7 @@ b {
 //desktop HOMEPAGE
 @media(min-width: 1020px) {
 
-  .page-content {
-    margin-top: $margin-top-content;
+  .home {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2,auto-fit);
@@ -125,8 +130,6 @@ b {
 
 ///Agenda
 .agenda {
-
-  margin: $margin-top-content;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto-fit;
@@ -162,15 +165,29 @@ b {
   }
 }
 
-
-//these are not needed for now
-// .page-title {
-//   margin-bottom: 4px;
-// }
-
-// .page-content {
-//   padding: 4px;
-// }
+//Prizes
+.scoring {
+  .instructions{
+    border-left: 3px solid;
+    padding-left: 12px;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-column-gap: $grid-column-gap;
+    padding-left: 0px;
+    
+    li {
+      list-style-type: none;
+      // justify-self: center;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // img {
+      //   g
+      // }
+    }
+  }
+}
 
 @import '~@angular/material/theming';
 
