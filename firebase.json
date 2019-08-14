@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/hack-for-good",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
