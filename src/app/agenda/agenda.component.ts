@@ -28,57 +28,67 @@ export class AgendaComponent {
           description: 'An online session where we will kick off the event'
         },
         {
-          time: new Date('12-Sep-2019 11:00 GMT+2'),
-          title: 'Hacking Day #1',
-          description: 'Time for you to start hacking'
-        }
-      ]
-    },
-    {
-      date: new Date('13-Sep-2019'),
-      items: [
-        {
-          time: new Date('13-Sep-2019 10:00 GMT+2'),
-          title: 'Hacking Day #2',
-          description: 'You keep on hacking'
-        }
-      ]
-    },
-    {
-      date: new Date('14-Sep-2019'),
-      items: [
-        {
-          time: new Date('14-Sep-2019 10:00 GMT+2'),
-          title: 'Hacking Day #3',
-          description: 'You keep on hacking'
-        }
-      ]
-    },
-    {
-      date: new Date('15-Sep-2019'),
-      items: [
-        {
-          time: new Date('15-Sep-2019 10:00 GMT+2'),
-          title: 'Hacking Day #4',
-          description: 'You should be finalising your hacks'
+          time: new Date('12-Sep-2019 10:00 GMT+2'),
+          title: 'Welcome message - for early birds',
+          description: 'An online session where we will kick off the event'
         },
         {
-          time: new Date('15-Sep-2019 23:00 GMT+2'),
+          time: new Date('12-Sep-2019 11:00 GMT+2'),
+          title: 'Hacking begins',
+          description: 'Time for you to start hacking'
+        },
+        {
+          time: new Date('12-Sep-2019 19:00 GMT+2'),
+          title: 'Welcome message - late birds',
+          description: 'An online session where we will kick off the event'
+        },
+      ]
+    },
+    // {
+    //   date: new Date('13-Sep-2019'),
+    //   items: [
+    //     {
+    //       time: new Date('13-Sep-2019 10:00 GMT+2'),
+    //       title: 'Hacking Day #2',
+    //       description: 'You keep on hacking'
+    //     }
+    //   ]
+    // },
+    // {
+    //   date: new Date('14-Sep-2019'),
+    //   items: [
+    //     {
+    //       time: new Date('14-Sep-2019 10:00 GMT+2'),
+    //       title: 'Hacking Day #3',
+    //       description: 'You keep on hacking'
+    //     }
+    //   ]
+    // },
+    {
+      date: new Date('16-Sep-2019 9:59 GMT+2'),
+      items: [
+        // {
+        //   time: new Date('15-Sep-2019 10:00 GMT+2'),
+        //   title: 'Hacking Day #4',
+        //   description: 'You should be finalising your hacks'
+        // },
+        {
+          time: new Date('16-Sep-2019 9:59 GMT+2'),
           title: 'Submission of your apps',
           description: 'Time to submit your apps'
         },
+        {
+          time: new Date('16-Sep-2019 17:00 GMT+2'),
+          title: 'Judging Begins',
+          description: 'The judges will review all submissions'
+        },
       ]
     },
     {
-      date: new Date('16-Sep-2019'),
+      date: new Date('19-Sep-2019'),
       items: [
         {
-          time: new Date('16-Sep-2019 10:00 GMT+2'),
-          title: 'Judgement day',
-          description: 'The judges will review all submissions'
-        },
-        {
-          time: new Date('16-Sep-2019 18:00 GMT+2'),
+          time: new Date('19-Sep-2019 13:00 GMT+2'),
           title: 'Winners announced',
           description: 'Time to submit your apps'
         },

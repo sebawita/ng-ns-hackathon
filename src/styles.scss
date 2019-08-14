@@ -16,6 +16,13 @@ body {
   margin: $page-margin-mobile;
 }
 
+a {
+  color: $color2;
+}
+b {
+  color: $color2;
+}
+
 //Styling for the navbar buttons
 .nav-bar {
   display: grid;
@@ -87,8 +94,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
-    
+  }
 
   app-intro {
     order: 2;
