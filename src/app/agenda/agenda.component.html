@@ -3,14 +3,12 @@
   <ul class="schedule">
     <li class="day" *ngFor="let day of agenda">
       <h2 class="day-date">{{day.date | date:'EEEE, dd-MMM y'}}</h2>
-      <div class="agenda-item" *ngFor="let item of day.items" [matTooltip]="item.description"
-        matTooltipPosition="above">
+      <div class="agenda-item" *ngFor="let item of day.items">
 
-        <p class="agenda-item-time">{{item.time | date:'shortTime'}}</p>
+        <!-- <p class="agenda-item-time">{{item.time | date:'shortTime'}}</p> -->
+        <p class="agenda-item-time">{{item.time | date:'HH:mm'}}</p>
         <p class="agenda-item-title">{{item.title}}</p>
-        <!-- <p class="agenda-item-description">{{item.description}}</p> -->
       </div>
-      <!-- <mat-divider></mat-divider> -->
     </li>
   </ul>
 </section>
