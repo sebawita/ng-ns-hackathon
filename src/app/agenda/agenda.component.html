@@ -6,7 +6,7 @@
       <div class="agenda-item" *ngFor="let item of day.items">
 
         <!-- <p class="agenda-item-time">{{item.time | date:'shortTime'}}</p> -->
-        <p class="agenda-item-time">{{item.time | date:'HH:mm'}}</p>
+        <p class="agenda-item-time">{{item.time | date:'HH:mm z'}}</p>
         <p class="agenda-item-title">{{item.title}}</p>
       </div>
     </li>
