@@ -1,11 +1,10 @@
 @import 'spacing.scss';
 
 //desktop
-h1,h2,h3 {
+h1,h2,h3, .mat-button, .mat-menu-item {
   margin-top: 0px;
   margin-bottom:$h-margin-bottom-desk;
   font-family: 'Space Mono', monospace;
-
 }
 
 h1 {
@@ -22,7 +21,7 @@ h3 {
   font-size: 1.25em;
 }
 
-p, .mat-buttom {
+p {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   font-size: 1em;
