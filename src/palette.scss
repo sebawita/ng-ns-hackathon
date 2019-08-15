@@ -13,3 +13,38 @@ $color2: rgba(115, 251, 211, 1);
 $color3: rgba(68, 229, 231, 1);
 $color4: rgba(247, 249, 249, 1);
 $color5: rgba(190, 216, 212, 1);
+
+@import '~@angular/material/theming';
+
+$mat-accent: (
+  50: #f2fefb,
+  100: #e5fef7,
+  200: #ccfdef,
+  300: #b2fce7,
+  400: #99fcdf,
+  500: $color2,
+  600: #5fcead,
+  700: #4aa087,
+  800: #357360,
+  900: #20453a,
+  A100: #e5fef7,
+  A200: #ccfdef,
+  A400: #99fcdf,
+  A700: #20453a,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);

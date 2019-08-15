@@ -5,17 +5,35 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { LearningComponent } from './learning/learning.component';
 import { CodeOfConductComponent } from './code-of-conduct/code-of-conduct.component';
 import { RegisterComponent } from './register/register.component';
-import { PrizesComponent } from './prizes/prizes.component';
+// import { PrizesComponent } from './prizes/prizes.component';
 import { RulesComponent } from './rules/rules.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'agenda', component: AgendaComponent },
-  { path: 'learning', component: LearningComponent },
-  { path: 'code-of-conduct', component: CodeOfConductComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'prizes', component: PrizesComponent },
-  { path: 'rules', component: RulesComponent },
+  {
+    path: 'agenda',
+    loadChildren: () => import('./agenda/agenda.module').then(mod => mod.AgendaModule)
+  },
+  {
+    path: 'learning',
+    loadChildren: () => import('./learning/learning.module').then(mod => mod.LearningModule)
+  },
+  {
+    path: 'prizes',
+    loadChildren: () => import('./prizes/prizes.module').then(mod => mod.PrizesModule)
+  },
+  {
+    path: 'rules',
+    loadChildren: () => import('./rules/rules.module').then(mod => mod.RulesModule)
+  },
+  {
+    path: 'code-of-conduct',
+    loadChildren: () => import('./code-of-conduct/code-of-conduct.module').then(mod => mod.CodeOfConductModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then(mod => mod.RegisterModule)
+  },
 ];
 
 @NgModule({

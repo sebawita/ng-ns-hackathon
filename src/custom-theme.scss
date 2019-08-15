@@ -15,7 +15,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $primary: mat-palette($mat-indigo);
-$accent: mat-palette($mat-green, A200, A100, A400);
+$accent: mat-palette($mat-accent, 400);
 
 // The warn palette is optional (defaults to red).
 $warn: mat-palette($mat-red);
@@ -27,7 +27,5 @@ $theme: mat-light-theme($primary, $accent, $warn);
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($theme);
-@include theme-me($theme);
 
 html, body { height: 100%; }
-body { margin: 0; font-family: "Avenir", "Helvetica Neue", sans-serif; }

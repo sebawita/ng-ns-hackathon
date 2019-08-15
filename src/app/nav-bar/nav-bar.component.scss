@@ -1,9 +1,6 @@
-button {
-  font-family: "Avenir", "Helvetica Neue", sans-serif;
-}
-
 @media (min-width: 1020px){
   .nav-menu {
+    display: none;
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -11,6 +8,7 @@ button {
 }
 @media (max-width: 1020px){
   .nav-items {
+    display: none;
     position: absolute;
     top: -9999px;
     left: -9999px;
