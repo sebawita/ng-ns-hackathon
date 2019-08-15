@@ -1,5 +1,5 @@
 @media (min-width: 1020px){
-  .nav-menu {
+  .nav-menu-mobile {
     display: none;
     position: absolute;
     top: -9999px;
@@ -7,10 +7,29 @@
   }
 }
 @media (max-width: 1020px){
-  .nav-items {
+  .nav-menu-desktop {
     display: none;
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
+}
+
+//Styling for the navbar buttons
+.nav-menu-desktop{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: stretch;
+  img {
+    // width:100%;
+  }
+  .nav-items {
+    justify-self: end;
+  }
+  a .home-button {
+    justify-self: start;
+  }
+}
+.nav-menu-mobile {
+  justify-self: end;
 }

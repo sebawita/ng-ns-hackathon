@@ -1,14 +1,16 @@
 <div class="nav-bar">
-  <a [routerLink]="['']" alt="home"><img src="../assets/img/hack-for-good-logo-an.svg" height="35"></a>
-  <nav role="navigation" class="nav-items">
-    <button mat-button [routerLink]="['/agenda']">Agenda</button>
-    <button mat-button [routerLink]="['/learning']">Learning Resources</button>
-    <button mat-button [routerLink]="['/prizes']">Prizes</button>
-    <button mat-button [routerLink]="['/rules']">Rules</button>
-    <button mat-button [routerLink]="['/code-of-conduct']">Code of Conduct</button>
-    <button mat-raised-button [routerLink]="['/register']">Register</button>
-  </nav>
-  <div role="navigation" class="nav-menu">
+  <div class="nav-menu-desktop">
+    <a [routerLink]="['']" alt="home" class="home-button"><img src="../assets/img/hack-for-good-logo-an.svg" height="35"></a>
+    <nav role="navigation" class="nav-items">
+      <button mat-button [routerLink]="['/agenda']">Agenda</button>
+      <button mat-button [routerLink]="['/learning']">Learning Resources</button>
+      <button mat-button [routerLink]="['/prizes']">Prizes</button>
+      <button mat-button [routerLink]="['/rules']">Rules</button>
+      <button mat-button [routerLink]="['/code-of-conduct']">Code of Conduct</button>
+      <button mat-raised-button [routerLink]="['/register']">Register</button>
+    </nav>
+  </div>
+  <div role="navigation" class="nav-menu-mobile">
     <mat-menu #appMenu="matMenu">
       <button color="accent" mat-menu-item [routerLink]="['/agenda']">Agenda</button>
       <button mat-menu-item [routerLink]="['/learning']">Learning Resources</button>

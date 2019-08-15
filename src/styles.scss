@@ -22,20 +22,7 @@ b {
   color: $color2;
 }
 
-//Styling for the navbar buttons
-.nav-bar {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-.nav-items {
-  justify-self: end;
-}
-.nav-menu {
-  justify-self: end;
-}
-.home-button {
-  justify-self: start;
-}
+
 
 //page content margins for mobile and desktop
 @media (min-width: 1020px){
