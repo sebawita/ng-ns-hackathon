@@ -54,7 +54,7 @@ b {
   }
 }
 
-//Mobile first layout HOMEPAGE
+//Mobile layout HOMEPAGE
 @media (max-width: 1020px) {
   .home {
     display: grid;
@@ -221,5 +221,21 @@ b {
   padding: $padding-content;
   h3 {
     margin: 12px 0px;
+  }
+}
+
+//learning
+.learning {
+  li {
+    list-style-type: none;
+    padding-top: 1em;
+  }
+  
+  .item {
+    padding: 0px 1.5em 0px 1em;
+  }
+  
+  .multi-line {
+    white-space: pre-wrap;
   }
 }
