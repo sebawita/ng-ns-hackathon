@@ -89,12 +89,11 @@ app-intro {
   
   .intro {
     min-height: 60vh;
-    // background: url("assets/img/Hack_for_good_transp_blue.png");
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
+    background: url("assets/img/Hack_for_good_transp_blue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  
 
   .subsection h2{
     border-top: 3px solid;
@@ -104,9 +103,49 @@ app-intro {
   
 }
 
+//Tablet layout HOMEPAGE
+@media(min-width : 768px) and (max-width : 1360px) {
 
+  .home {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (5, 1fr);
+
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: $grid-row-gap;
+  }
+  //home component
+
+  app-intro {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+    border-left: 3px solid;
+    padding-left: 24px;
+  }
+
+  app-key-facts {
+    grid-column-start: 1 / span 2;
+    grid-row: 1 / span 3;
+  }
+
+  .mission {
+    grid-column: 1 /span 4;
+    grid-row-start: 4;
+    border-top: 3px solid;
+    margin-top:24px;
+    h2 {
+      margin-top:24px;
+      // padding-top: 10px;
+    }
+  }
+  .getting-ready {
+    grid-column: 1 / span 4;
+    grid-row-start: 5; 
+    border-top: 3px solid;
+  }
+}
 //desktop HOMEPAGE
-@media(min-width: 1090px) {
+@media(min-width: 1360px) {
 
   .home {
     display: grid;
@@ -145,39 +184,7 @@ app-intro {
   }
 }
 
-//Tablet layout HOMEPAGE
-@media(min-width : 768px) and (max-width : 1090px) {
 
-  .home {
-    display: grid;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: repeat (5, 1fr);
-
-    grid-column-gap: $grid-column-gap;
-    grid-row-gap: $grid-row-gap;
-   
-  }
-  //home component
-
-  app-intro {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 3;
-  }
-
-  app-key-facts {
-    grid-column-start: 1 / span 2;
-    grid-row: 1 / span 3;
-  }
-
-  .mission {
-    grid-column: 1 /span 4;
-    grid-row-start: 4;
-  }
-  .getting-ready {
-    grid-column: 1 / span 3;
-    grid-row-start: 5; 
-  }
-}
 
 ///Agenda
 .agenda {
@@ -227,6 +234,7 @@ app-intro {
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
           grid-column-gap: $grid-column-gap;
         }
+        margin:12px;
         
         li {
           list-style-type: none;
@@ -239,7 +247,8 @@ app-intro {
             margin-bottom: 0px;
           }
           p {
-            margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 12px;
           }
           .description {
             align-self: center;
@@ -272,7 +281,7 @@ app-intro {
 } 
 .category {
   border: 1px solid;
-  padding: $padding-content;
+  padding: 12px;
   h3 {
     margin: 12px 0px;
   }
