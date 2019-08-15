@@ -5,7 +5,6 @@
 @import 'spacing.scss';
 
 body { 
-  // font-family: "Avenir", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   background-color: $color1;
   color:white;
@@ -44,7 +43,7 @@ b {
     margin-top: $margin-top-content;
     margin-left: 0px;
     .page-title {
-      //fond out where else this is applied
+      //find out where else this is applied
       margin-bottom: $content-top-padding-desktop;
     }
   }
@@ -58,16 +57,15 @@ b {
     grid-column-gap: $grid-column-gap;
     grid-row-gap: $grid-row-gap;
   }
-  .intro-container {
   
-    .intro {
-      min-height: 60vh;
-      background: url("assets/img/Hack_for_good_transp_blue.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .intro {
+    min-height: 60vh;
+    background: url("assets/img/Hack_for_good_transp_blue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  
 
   .subsection h2{
     border-top: 3px solid;
@@ -82,21 +80,15 @@ b {
 
   .home {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2,auto-fit);
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (4, 1fr);
 
     grid-column-gap: $grid-column-gap;
     grid-row-gap: $grid-row-gap;
    
   }
   //home component
-  .intro-container {
-    grid-column: span 4;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-column-gap: $grid-column-gap;
-    grid-row-gap: $grid-row-gap;
-
+  app-intro {
     background: url("assets/img/Hack_for_good_transp_blue.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +96,8 @@ b {
   }
 
   app-intro {
-    order: 2;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
     .intro {
       border-left: 3px solid;
       padding: $padding-content;
@@ -112,22 +105,22 @@ b {
   }
 
   app-key-facts {
-    order: 1;
+    grid-column-start: 1;
+    grid-row: 1 / span 3;
   }
 
   .mission {
-    order: 3;
+    grid-column-start: 4;
+    grid-row: 1 / span 4;
     padding: $padding-content;
   }
   .getting-ready {
-    grid-column: span 3;
+    grid-column: 1 / span 3;
+    grid-row-start: 4;
     border-top: 1 px solid;
     border-left: 3px solid;
-    padding: $padding-content;  
+    padding: $padding-content; 
   }
-  .connect {
-    padding: $padding-content;
- }
 }
 
 ///Agenda
