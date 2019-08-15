@@ -1,0 +1,18 @@
+button {
+  font-family: "Avenir", "Helvetica Neue", sans-serif;
+}
+
+@media (min-width: 1020px){
+  .nav-menu {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}
+@media (max-width: 1020px){
+  .nav-items {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}
