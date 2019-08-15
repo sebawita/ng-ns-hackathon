@@ -43,10 +43,19 @@ footer {
   // background-color: red;
   // margin-top: 40px;
   border-top: 1px solid $color5;
+
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   align-items: center;
   column-gap: 10px;
+
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 10px;
+  }
 
 }
 
@@ -65,7 +74,7 @@ a, b {
     }
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .page-title {
     margin: $content-top-padding-mobile 0px;
   }
@@ -282,6 +291,7 @@ app-intro {
 .category {
   border: 1px solid;
   padding: 12px;
+  margin: 12px 0;
   h3 {
     margin: 12px 0px;
   }
