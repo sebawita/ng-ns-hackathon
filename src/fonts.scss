@@ -4,27 +4,27 @@
 h1,h2,h3 {
   margin-top: 0px;
   margin-bottom:$h-margin-bottom-desk;
+  font-family: 'Space Mono', monospace;
+
 }
 
 h1 {
-  font-family: "Playfair Display";
-  font-size: 5em;
+  font-size: 5.5em;
   font-weight: 900;
   line-height: 1;
 }
 
 h2 {
-  font-family: "Playfair Display";
   font-size: 2em;
 }
 
 h3 {
-  font-family: "Playfair Display";
   font-size: 1.25em;
 }
 
-p {
-  font-weight: 100;
+p, .mat-buttom {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
   // color: rgba(0,0,0,0.6);
 }
 
