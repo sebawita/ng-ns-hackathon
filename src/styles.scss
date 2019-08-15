@@ -4,22 +4,50 @@
 @import 'palette.scss';
 @import 'spacing.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
+}
 body { 
   box-sizing: border-box;
   background-color: $color1;
   color:white;
-
+  
   @media(min-width: 980px){
     margin: $page-margin-desktop;
   }
   margin: $page-margin-mobile;
 }
 
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 80px;
+  /* must be same height as the footer */
+}
+
 footer {
+
+  position: relative;
+  margin-top: -100px;
+  /* negative value of footer height */
+  height: 80px;
+  clear: both;
+  // background-color: red;
+  // margin-top: 40px;
+  border-top: 1px solid $color5;
   display: grid;
   grid-template-columns: auto 1fr auto auto;
   align-items: center;
   column-gap: 10px;
+
 }
 
 a, b {
@@ -43,8 +71,15 @@ a, b {
   }
 }
 
+app-intro {
+  background: url("assets/img/Hack_for_good_transp_blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 //Mobile layout HOMEPAGE
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
   .home {
     display: grid;
     grid-template-rows: repeat(2fr,1fr,1fr);
@@ -54,10 +89,10 @@ a, b {
   
   .intro {
     min-height: 60vh;
-    background: url("assets/img/Hack_for_good_transp_blue.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background: url("assets/img/Hack_for_good_transp_blue.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
   }
   
 
@@ -69,8 +104,9 @@ a, b {
   
 }
 
+
 //desktop HOMEPAGE
-@media(min-width: 1020px) {
+@media(min-width: 1090px) {
 
   .home {
     display: grid;
@@ -88,11 +124,6 @@ a, b {
     grid-row: 1 / span 3;
     border-left: 3px solid;
     padding: $padding-content;
-
-    background: url("assets/img/Hack_for_good_transp_blue.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   app-key-facts {
@@ -111,6 +142,40 @@ a, b {
     border-top: 1 px solid;
     border-left: 3px solid;
     padding: $padding-content; 
+  }
+}
+
+//Tablet layout HOMEPAGE
+@media(min-width : 768px) and (max-width : 1090px) {
+
+  .home {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (5, 1fr);
+
+    grid-column-gap: $grid-column-gap;
+    grid-row-gap: $grid-row-gap;
+   
+  }
+  //home component
+
+  app-intro {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 3;
+  }
+
+  app-key-facts {
+    grid-column-start: 1 / span 2;
+    grid-row: 1 / span 3;
+  }
+
+  .mission {
+    grid-column: 1 /span 4;
+    grid-row-start: 4;
+  }
+  .getting-ready {
+    grid-column: 1 / span 3;
+    grid-row-start: 5; 
   }
 }
 
