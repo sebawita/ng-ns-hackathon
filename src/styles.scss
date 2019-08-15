@@ -15,14 +15,16 @@ body {
   margin: $page-margin-mobile;
 }
 
-a {
-  color: $color2;
-}
-b {
-  color: $color2;
+footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  column-gap: 10px;
 }
 
-
+a, b {
+  color: $color2;
+}
 
 //page content margins for mobile and desktop
 @media (min-width: 1020px){
