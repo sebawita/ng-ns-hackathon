@@ -18,14 +18,15 @@
 //Styling for the navbar buttons
 .nav-bar {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  justify-content: stretch;
+  grid-template-columns: 1fr 5fr;
+  justify-items: stretch;
 
-  .nav-items {
+  .nav-menu-desktop {
     justify-self: end;
   }
-  a .home-button {
+  .home-button {
     justify-self: start;
+  
   }
 }
 .nav-menu-mobile {
