@@ -16,13 +16,11 @@
 }
 
 //Styling for the navbar buttons
-.nav-menu-desktop{
+.nav-bar {
   display: grid;
   grid-template-columns: 1fr 3fr;
   justify-content: stretch;
-  img {
-    // width:100%;
-  }
+
   .nav-items {
     justify-self: end;
   }
