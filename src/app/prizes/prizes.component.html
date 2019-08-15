@@ -1,46 +1,44 @@
-<section class="page-content prizes">
+<div class="page-content prizes">
   <h1 class="page-title">Prizes</h1>
-
-  <div class="scoring">
-    <div class="instructions">
-      <h2>How Scoring Works</h2>
-      <p>Entries will be judged on a 20-100 scale across 3
-        dimensions:</p>
-    </div>
-    <ul>
-      <li>
-        <img src="assets/img/innovation.svg" alt="innovation lightbulb">
-        <div class="description">
-          <h3>Innovation</h3>
-          <p>
-            How original is the idea and execution?
-          </p>
+  <section class="scoring">
+        <div class="instructions">
+          <h2>How Scoring Works</h2>
+          <p>Entries will be judged on a 20-100 scale across 3
+            dimensions:</p>
         </div>
-      </li>
-      <li>
-        <img src="assets/img/design.svg" alt="pixels and brushes">
-        <div class="description">
-          <h3>Design</h3>
-          <p>
-            How good does it look and feel to use?
-          </p>
-        </div>
-      </li>
-      <li>
-        <img src="assets/img/useful.svg" alt="laptop heart">
-        <div class="description">
-          <h3>Utility</h3>
-          <p>
-            Is the app offering a service I'd use again and again?
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <div class="categories">
-    <h2>Categories</h2>
-
+        <ul>
+          <li>
+              <img src="assets/img/innovation.svg" alt="innovation lightbulb">
+            <div class="description">
+              <h3>Innovation</h3>
+              <p>
+                How original is the idea and execution?
+              </p>
+            </div>
+          </li>
+          <li>
+              <img src="assets/img/design.svg" alt="pixels and brushes">
+            <div class="description">
+              <h3>Design</h3>
+              <p>
+                How good does it look and feel to use?
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/img/useful.svg" alt="laptop heart">
+            <div class="description">
+              <h3>Utility</h3>
+              <p>
+                Is the app offering a service I'd use again and again?
+              </p>
+            </div>
+          </li>
+        </ul>
+  </section>
+<section class="categories">
+  <h2>Categories</h2>
+  <div class="categories-container">
     <div *ngFor="let category of categories" class="category">
       <h3>{{category.name}}</h3>
       <p>{{category.description}}</p>
@@ -53,4 +51,5 @@
       </ul>
     </div>
   </div>
-</section>
+  </section>
+</div>
