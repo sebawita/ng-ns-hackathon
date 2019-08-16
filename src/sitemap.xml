@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://ng-ns.org/</loc>
+  </url>
+  <url>
+    <loc>https://ng-ns.org/agenda/</loc>
+  </url>
+  <url>
+    <loc>https://ng-ns.org/learning/</loc>
+  </url>
+  <url>
+    <loc>https://ng-ns.org/prizes/</loc>
+  </url>
+  <url>
+    <loc>https://ng-ns.org/rules/</loc>
+  </url>
+  <url>
+    <loc>https://ng-ns.org/code-of-conduct/</loc>
+  </url>
+  <url>
+    <loc>https://ng-ns.org/register/</loc>
+  </url>
+</urlset>
