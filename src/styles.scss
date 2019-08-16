@@ -5,8 +5,8 @@
 @import 'spacing.scss';
 
 * {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
 }
 
 html,body{
@@ -61,6 +61,7 @@ footer {
 
 a, b {
   color: $color2;
+  text-decoration: none;
 }
 
 //page content margins for mobile and desktop
@@ -80,6 +81,8 @@ a, b {
   }
 }
 
+
+///HOME SECTION
 app-intro {
   background: url("assets/img/Hack_for_good_transp_blue.png");
   background-size: cover;
@@ -108,6 +111,10 @@ app-intro {
     border-top: 3px solid;
     margin: 20px 0px;
     padding-top: 10px;
+    margin-bottom: 0px;
+  }
+  .subsection h2:not(:first-child) {
+    margin-top: 12px;
   }
   
 }
@@ -172,6 +179,9 @@ app-intro {
     grid-row: 1 / span 3;
     border-left: 3px solid;
     padding: $padding-content;
+    .hackathon {
+      margin-bottom: 0px;
+    }
   }
 
   app-key-facts {
@@ -191,6 +201,17 @@ app-intro {
     border-left: 3px solid;
     padding: $padding-content; 
   }
+
+  .subsection h2{
+    margin-bottom: 0px;
+  }
+  .subsection h2:not(:first-child) {
+    margin-top: 24px;
+  }
+  .subsection p{
+    margin-top: 6px;
+  }
+
 }
 
 
@@ -214,6 +235,7 @@ app-intro {
   }
   ul {
     padding-left: 24px;
+    margin-top: 30px;
   }
   .schedule li{
     list-style-type: none;
@@ -231,53 +253,53 @@ app-intro {
 
 //Prizes
 .scoring {
-  .instructions{
-    // border-left: 3px solid;
-    padding-left: 12px;
-  }
-      ul {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-left: 0px;
-        @media (min-width: 1020px) {
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          grid-column-gap: $grid-column-gap;
-        }
-        margin:12px;
-        
-        li {
-          list-style-type: none;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-column-gap: 12px;
-          padding: 24px;
-          
-          h3 {
-            margin-bottom: 0px;
-          }
-          p {
-            margin-top: 0px;
-            margin-bottom: 12px;
-          }
-          .description {
-            align-self: center;
-          }
-          img {
-            justify-self: end;
-          }
+  // .instructions{
+  //   // border-left: 3px solid;
+  //   padding-left: 12px;
+  // }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0px;
+    @media (min-width: 1020px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: $grid-column-gap;
+    }
+    margin:12px;
+    
+    li {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 12px;
+      padding: 24px;
+      
+      h3 {
+        margin-bottom: 0px;
+      }
+      p {
+        margin-top: 0px;
+        margin-bottom: 12px;
+      }
+      .description {
+        align-self: center;
+      }
+      img {
+        justify-self: end;
+      }
 
-          //mobile
-          @media (max-width: 480px) {
-            grid-template-columns: 1fr;
-            img {
-              justify-self: center;
-            }
-            .description {
-              text-align: center;
-            }
-          }
+      //mobile
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        img {
+          justify-self: center;
+        }
+        .description {
+          text-align: center;
         }
       }
+    }
+  }
 }
 .categories-container {
   display: grid;
@@ -299,9 +321,22 @@ app-intro {
 
 //learning
 .learning {
+  .sessions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   li {
     list-style-type: none;
     padding-top: 1em;
+  }
+  .session {
+    border: 1px solid;
+    padding: 12px;
+    margin: 12px;
+    height:200px;
+  h3 {
+    margin: 12px 0px;
+  }
   }
   
   .item {

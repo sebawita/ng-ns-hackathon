@@ -64,7 +64,7 @@ This page explains all you need to know about the Layout Containers in NativeScr
       date: new Date(Date.UTC(2019, 7, 21, 16, 0)),
       link: 'https://www.nativescript.org/',
       description: `Join Sebastian and Stanimira to learn about building mobile apps with Angular and NativeScript.
-      Don't worry if you can't make it, we will record it and share it on YouTube.`
+Don't worry if you can't make it, we will record it and share it on YouTube.`
     },
     {
       name: 'Webinar: Angular ❤ NativeScript #2',
