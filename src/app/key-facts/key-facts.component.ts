@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class KeyFactsComponent {
   keyFacts = [
+    { title: 'Organised by', description: 'Angular and NativeScript teams' },
     { title: 'Team Size', description: '1-4 people' },
     { title: 'Stack', description: 'Angular and NativeScript' },
     // { title: 'Prizes', description: '2000 USD, Kendo UI licenses and more'},
