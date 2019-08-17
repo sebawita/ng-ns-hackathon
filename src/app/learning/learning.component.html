@@ -7,16 +7,14 @@
 
   <h2>Live Sessions</h2>
 
-  <ul class="sessions">
-    <li *ngFor="let session of sessions">
-      <div class="session">
-        <h3>{{session.name}}</h3>
-        <!-- <h3><a target="_blank" [href]="session.link">{{session.name}}</a></h3> -->
-        <h4>{{session.date | date:'d MMMM y, HH:mm z'}}</h4>
-        <p class="multi-line">{{session.description}}</p>
-      </div>
-    </li>
-  </ul>
+  <div class="sessions">
+    <div *ngFor="let session of sessions" class="session">
+      <h3>{{session.name}}</h3>
+      <!-- <h3><a target="_blank" [href]="session.link">{{session.name}}</a></h3> -->
+      <h4>{{session.date | date:'d MMMM y, HH:mm z'}}</h4>
+      <p class="multi-line">{{session.description}}</p>
+    </div>
+  </div>
 
   <h2>Resources</h2>
 
