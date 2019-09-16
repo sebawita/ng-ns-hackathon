@@ -62,14 +62,14 @@ This page explains all you need to know about the Layout Containers in NativeScr
     {
       name: 'Webinar: Angular ❤ NativeScript #1',
       date: new Date(Date.UTC(2019, 7, 21, 16, 0)),
-      link: 'https://www.nativescript.org/',
+      link: 'https://attendee.gotowebinar.com/register/6485346592025943820',
       description: `Join Sebastian and Stanimira to learn about building mobile apps with Angular and NativeScript.
 Don't worry if you can't make it, we will record it and share it on YouTube.`
     },
     {
       name: 'Webinar: Angular ❤ NativeScript #2',
       date: new Date(Date.UTC(2019, 7, 23, 16, 0)),
-      link: 'https://www.nativescript.org/',
+      link: 'https://attendee.gotowebinar.com/register/8129679425504506892',
       description: `Join Sebastian and Stanimira to continue learning about Angular and NativeScript.
 Don't worry if you can't make it, we will record it and share it on YouTube.`
     },

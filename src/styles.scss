@@ -61,7 +61,7 @@ footer {
 
 a, b {
   color: $color2;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 //page content margins for mobile and desktop
@@ -306,9 +306,9 @@ app-intro {
   grid-template-columns: 1fr;
   padding-left: 0px;
   @media (min-width: 1020px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: $grid-column-gap;
-  } 
+  }
 } 
 .category {
   border: 1px solid;
