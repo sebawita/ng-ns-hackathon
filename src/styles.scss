@@ -321,9 +321,12 @@ app-intro {
 
 //learning
 .learning {
+  .page-title {
+    margin-bottom: 40px;
+  }
   .sessions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -334,7 +337,7 @@ app-intro {
     padding-top: 1em;
   }
   .session {
-    border: 1px solid;
+    // border: 1px solid;
     padding: 12px;
     margin: 12px;
 
